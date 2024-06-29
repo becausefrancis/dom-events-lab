@@ -9,20 +9,17 @@
 
 /*------------------------ Cached Element References ------------------------*/
 
-const buttonNumEl = document.querySelectorAll('div .button number');
+const btns = document.querySelectorAll('.button number');
+const calculatorEl = document.querySelector('#calculator');
 const displayEl = document.querySelector('.display');
-
-
-
-
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-buttonNumEl.addEventListener('click', displayNum)
-  
+btns.forEach((btn) => {
+  displayEl.innerText = btn.innerText
+});
+
 
 /*-------------------------------- Functions --------------------------------*/
 
-const displayNum = () => {
-  displayEl.textContent = 'hi';
-}
+const 
